@@ -17,7 +17,7 @@ git clone http://github.com/geoffschoeman/numberconverter.git
 ```
 ##### Build
 ```
-cd NumberConverter
+cd numberconverter
 mvn package
 ```
 ##### Run
