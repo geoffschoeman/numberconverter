@@ -54,7 +54,7 @@ public class NumberToStringConverter implements Converter<Integer, String> {
      * Example:
      *   The number 2147483647
      *   will return the string:
-     *   Two billion one hundred forty seven million four hundred eighty three thousand six hundred forty seven
+     *   Two billion one hundred and forty seven million four hundred and eighty three thousand six hundred and forty seven
      * @param number A valid integer
      * @throws IllegalArgumentException if a null value is passed
      * @return the text string
@@ -125,7 +125,7 @@ public class NumberToStringConverter implements Converter<Integer, String> {
      * Example:
      *   The number 983
      *   Will return the string:
-     *   Nine hundred eighty three
+     *   Nine hundred and eighty three
      * @param number The number to be converted
      * @throws IllegalArgumentException if the given number is out of the 0 to 999 range.
      * @throws IllegalStateException if the internal lookup maps cannot map the given value.
