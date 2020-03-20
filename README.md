@@ -5,7 +5,7 @@ A utility for converting numbers into English text.
 ## Getting Started
 
 ### Prerequisites
-
+* Git
 * Java 8 or higher
 * Maven 3.5 or higher
 
@@ -28,10 +28,10 @@ java -jar target\numberconverter-1.0.0-SNAPSHOT.war
 ##### How to use
 There are three ways to use the number conversion tool:  
 
-1. Webpage  
+##### 1. Webpage  
 Open a web browser and navigate to http://localhost:8080/ 
 
-2. Web request  
+##### 2. Web request  
 Use curl or a similar command line HTTP utility  
 `curl http://localhost:8080/convert/[Number to convert]`  
 
@@ -41,7 +41,7 @@ http://localhost:8080/convert/567894
 Five hundred and sixty seven thousand eight hundred and ninety four
 ```
 
-3. Startup arguments  
+##### 3. Startup arguments  
 Pass one or more numbers as startup parameters. The converted values will print to the logs.  
 
 Example:
