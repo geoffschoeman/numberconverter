@@ -65,6 +65,10 @@ public class NumberToStringConverter implements Converter<Integer, String> {
         if (number == null) {
             throw new IllegalArgumentException("Number cannot be null");
         }
+        
+        if (number == 0) {
+            return ZERO_LABEL;
+        }
         StringBuilder result = new StringBuilder();
         
         // Conversion to Long is necessary in the case when Integer.MIN_VALUE 
@@ -88,10 +92,6 @@ public class NumberToStringConverter implements Converter<Integer, String> {
 
         if (ZERO.compareTo(number) > 0) {
             throw new IllegalArgumentException("Must be a positive number");
-        }
-
-        if (ZERO.compareTo(number) == 0) {
-            return ZERO_LABEL;
         }
 
         if (number.compareTo(BILLION) > -1) {
